@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Switch_Calculator
+public class SwitchCalculator
 {
 
   public static void main(String[] args) {
