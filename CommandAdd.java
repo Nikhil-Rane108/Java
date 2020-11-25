@@ -1,25 +1,12 @@
-import java.io.DataInputStream;
+public class Add {
+    public static void main(String args[]) {
+        int c=0;
+        for(int i=0;i<args.length;i++)
 
-public class CommandAdd
-{
-   public static void main(String args[]) 
-   { 
-      DataInputStream in1 = new DataInputStream(System.in);
-      int x,y,z;
-      try
-      {
-          System.out.println("Enter first number:");
-          x=Integer.parseInt(in1.readLine());
-          
-          System.out.println("Enter second number:");
-          y=Integer.parseInt(in1.readLine());
-          
-          z=x+y;
-          System.out.println("Addition of the numbers:" +z);
-      }
-      catch(Exception e) 
-      {
-          System.out.println("Error is:"+e);  
-      }       
-   }
+        {
+                    c=c + Integer.parseInt(args[i]);
+            
+        }
+         System.out.println("The result is:"+c);
+    }
 }
